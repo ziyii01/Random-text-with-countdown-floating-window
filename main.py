@@ -28,13 +28,13 @@ class main_win():
         self.window.setWindowFlag(Qt.WindowDoesNotAcceptFocus)
         self.window.setWindowOpacity(0.75)
         self.倒计时 = QLabel(self.window)
-        self.倒计时.resize(460, 100)  # 标签的大小
+        self.倒计时.resize(456, 100)  # 标签的大小
         self.倒计时.move(0, 0)  # 位置
         self.倒计时.setText('''WuW''')
         self.倒计时.setAlignment(Qt.AlignCenter)
         self.倒计时.setStyleSheet('''font-size: 32pt;''')  # 字体大小设置
         self.背诵内容 = QLabel(self.window)
-        self.背诵内容.resize(460, 332)  # 标签2的大小
+        self.背诵内容.resize(456, 312)  # 标签2的大小
         self.背诵内容.move(0, 100)  # 标签2的位置
         self.背诵内容.setText('''WuW''')
         self.背诵内容.setAlignment(Qt.AlignCenter)
@@ -62,7 +62,7 @@ class main_win():
             d = datetime.datetime.now()
             d1 = datetime.datetime(d.year, d.month, d.day, d.hour, d.minute,
                                    d.second)
-            d2 = datetime.datetime(2023, 5, 9, 21, 30, 0)  # 结束日期 年 月 日 时 分 秒
+            d2 = datetime.datetime(2024, 6, 4, 21, 30, 0)  # 结束日期 年 月 日 时 分 秒
             interval = d2 - d1
             h = interval.seconds // (60 * 60)
             m = (interval.seconds - (h * (60 * 60))) // 60
